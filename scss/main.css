@@ -895,7 +895,8 @@ a {
     height: 22px;
     position: absolute;
     top: 13px;
-    right: 13px; }
+    right: 13px;
+    cursor: pointer; }
 
   /* ----------Section Splash / Course---------- */
   .Course__Icon {
