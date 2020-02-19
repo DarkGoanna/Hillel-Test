@@ -1,0 +1,229 @@
+@media(max-width: 767px) {
+    .Container {
+        padding: 0 15px;
+    }
+    /* -----------Section Splash---------- */
+    .Splash {
+        padding-bottom: 60px;
+
+        & > .Container {
+            padding: 0;
+        }
+    }
+    .Header {
+        margin-bottom: 33px;
+
+        &__TopBar {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            position: relative;
+            height: 48px;
+        }
+    }
+    /* -----------Section Splash / TopBar---------- */
+    .CitySwitch {
+        display: none;
+    }
+    .Contact {
+        &__Link,
+        &__Controls {
+            display: none;
+        }
+        &__Tel {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            padding: 0;
+            margin: 0;
+
+            & .TelColor {
+                --color: #004182;
+            }
+        }
+    }
+    .NavBar {
+        &__Hamburger {
+            display: inline-block;
+            width: 22px;
+            height: 2px;
+            background-color: #004182;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 2px;
+                background-color: #004182;
+            }
+            &::before {
+                position: absolute;
+                top: -7px;
+            }
+            &::after {
+                position: relative;
+                bottom: 4px;
+            }
+        }
+        &__Nav {
+            display: none;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 100%;
+            padding: 5px 10px 0 10px;
+
+            &.show {
+                display: block;
+            }
+        }
+        &__Logo {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 134px;
+            height: 26px;
+            --color: #004182;       
+        }
+    }
+    .Menu {
+        justify-content: center;
+
+        &__School {
+            display: flex;
+        }
+        &__Consultation {
+            display: none;
+        }
+    }
+    .SubMenu {
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+    .HamburgerButton {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+    }
+    /* ----------Section Splash / Course---------- */
+    .Course {
+        &__Icon {
+            margin-bottom: 13px;
+        }
+        &__Title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 16px;
+        }
+        &__Stats {
+            width: 100%;
+        }
+    }
+    .Rating {
+        margin-bottom: 28px;
+
+        &__Strip {
+            margin-bottom: 28px;
+        }
+    }
+    .Stats {
+        width: 100%;
+    }
+    .Row1 {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        
+
+        &__Text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__Item {
+            margin: 0 15px 15px 15px;
+
+            &:last-of-type {
+                margin-right: 15px;
+            }
+        }
+    }
+    .Row2 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 21px;
+
+        &__Text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__Item {
+            margin-bottom: 10px;
+
+            &:first-of-type {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    /* -----------Section Introduction---------- */
+    .Introduction {
+        padding-top: 58px;
+        padding-bottom: 30px;
+    
+        & > .Container {
+            padding: 0;
+        }
+        &__Title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .Test {
+        margin-bottom: 30px;
+        border-radius: 0;
+    }
+    /* -----------Section Coaches---------- */
+    .Coaches {
+        padding-top: 30px;
+
+        &__Title {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 13px;
+            margin-left: 15px;
+        }
+        &__Text {
+            margin-left: 15px;
+        }
+        &__Card {
+            width: auto;
+            height: 418px;
+        }
+        &__Photo {
+            margin-bottom: 15px
+        }
+        &__Link {
+            top: 20px;
+            right: 20px;
+        }
+        &__Name {
+            margin: 0 15px 10px 15px;
+        }
+        &__Description {
+            margin: 0 15px;
+        }
+        &__Logo {
+            bottom: 15px;
+            left: 15px;
+        }
+    }
+}

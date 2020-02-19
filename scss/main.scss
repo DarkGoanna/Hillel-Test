@@ -1,0 +1,27 @@
+@import 'fonts';
+@import 'reset';
+@import 'splash';
+@import 'introduction';
+@import 'coaches';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Solomon', sans-serif;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+/* ----------Desktop HD---------- */
+.Container {
+    box-sizing: content-box;
+    max-width: 1380px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+@import 'desktopSD';
+@import 'tabletHD';
+@import 'tabletSD';
+@import 'mobile';

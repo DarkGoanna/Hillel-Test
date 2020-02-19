@@ -1,0 +1,17 @@
+@media(max-width: 1279px) {
+    /* -----------Section Introduction---------- */
+    .Introduction {
+        &__InnerContainer {
+            width: 630px;
+        }
+        &__InnerContainer:nth-of-type(2) {
+            width: 875px;
+        }
+    }
+    /* -----------Section Coaches---------- */
+    .Coaches {
+        &__Card {
+            width: 219px;
+        }
+    }
+}

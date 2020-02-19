@@ -1,0 +1,27 @@
+@media(max-width: 1023px) {
+    /* -----------Section Splash---------- */
+    .Menu {
+        &__Consultation {
+            display: block;
+        }
+        &__Webinars,
+        &__Blog {
+            display: none;
+        }
+    }
+    /* -----------Section Introduction---------- */
+    .Introduction {
+        &__InnerContainer {
+            width: 100%;
+        }
+        &__InnerContainer:nth-of-type(2) {
+            width: 100%;
+        }
+    }
+    /* -----------Section Coaches---------- */
+    .Coaches {
+        &__Card {
+            width: auto;
+        }
+    }
+}

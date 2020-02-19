@@ -1,0 +1,96 @@
+.Introduction {
+    padding-top: 90px;
+    padding-bottom: 55px;
+
+    &__InnerContainer {
+        width: 910px;
+        margin: auto;
+    }
+    &__Main {
+        padding: 0 30px;
+    }
+    &__Title {
+        font-size: 50px;
+        line-height: 54px;
+        margin-bottom: 32px;
+    }
+    &__Text {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+        &_Blue {
+            color: #7493C5;
+        }
+        &_Bold {
+            font-weight: 700;
+        }
+    }
+}
+.Test {
+    background: #F0FEE1;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 60px;
+
+    &__Text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+
+        &_Bold {
+            font-weight: 700;
+        }
+    }
+    &__Button {
+        padding: 10px 25px;
+        background: #4ED401;
+        border: none;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+.Technologies {
+    &__Title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #8D949E;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__CardsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__Image {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 15px;
+    }
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 30px 30px;
+    
+
+    &__Name {
+        font-size: 14px;
+        line-height: 16px;
+        color: #6B6D72;
+        text-align: center;
+    }
+}

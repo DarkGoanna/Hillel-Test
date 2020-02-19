@@ -1,0 +1,98 @@
+.Coaches {
+    background-color: #FAFAFA;
+    padding-top: 60px;
+    padding-bottom: 72px;
+
+    &__Title {
+        font-size: 30px;
+        line-height: 36px;
+        color: #8D949E;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+    &__Text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    &__Carousel {
+        
+        & 
+        .Coaches__Card 
+        .Coaches__Logo {
+            width: 120px;
+            height: 50px;
+        }
+    }
+    &__Card {
+        position: relative;
+        padding-bottom: 80px;
+        width: 323px;
+        height: 448px;
+        background: #FFFFFF;
+        margin-bottom: 30px;
+
+        &:hover {
+            box-shadow: 0px 15px 30px #DCDFE4;
+        }
+        &:hover .Coaches__More {
+            transform: scale(2);
+        }
+    }
+    &__Photo {
+        margin-bottom: 30px;
+        height: 200px;
+        object-fit: cover;
+    }
+    &__Link {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &__MoreButton {
+        fill: rgba(0, 0, 0, 0.3);
+    }
+    &__Name {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 30px 10px 30px;
+    }
+    &__Description {
+        font-size: 16px;
+        line-height: 22px;
+        height: 70px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 30px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #ffffff 100%);
+        }
+    }
+    &__Logo {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+}
+
+.owl-carousel.owl-theme .owl-dots {
+    & .owl-dot span{
+        background: #E3E5E8;
+        width: 12px;
+        height: 12px;
+    }
+    & .owl-dot .active span{
+        background: #ACB6C5;
+    }
+}
+.owl-carousel.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+}

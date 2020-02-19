@@ -1,0 +1,47 @@
+@media(max-width: 1439px) {
+    .Container {
+        max-width: 100%;
+    }
+    /* -----------Section Splash---------- */
+    .Splash {
+        padding-bottom: 90px;
+    }
+    .Header {
+        margin-bottom: 0;
+    }
+    .NavBar {
+        &__Nav {
+            padding-bottom: 40px;
+        }
+    }
+    /* -----------Section Introduction---------- */
+    .Introduction {
+        padding-bottom: 60px;
+    
+        &__InnerContainer {
+            width: 802px;
+        }
+    }
+    .Card {
+        &:nth-last-of-type(2) {
+            display: none;
+        }
+    }
+    
+    .Technologies__Image {
+        margin-bottom: 11px;
+    }
+    /* -----------Section Coaches---------- */
+    .Coaches {
+        &__Card {
+            width: 282px;
+        }
+        &__Link {
+            top: 25px;
+            right: 25px;
+        }
+        &__More {
+            transform: scale(1.5);
+        }
+    }
+}
