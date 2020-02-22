@@ -12,6 +12,11 @@
     }
     .Header {
         margin-bottom: 33px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
 
         &__TopBar {
             background: rgba(255, 255, 255, 0.85);
@@ -76,6 +81,8 @@
             left: 0;
             width: 100%;
             padding: 5px 10px 0 10px;
+            background-image: linear-gradient(to bottom, #004182, transparent);
+            height: 50px;
 
             &.show {
                 display: block;
@@ -94,6 +101,9 @@
     .Menu {
         justify-content: center;
 
+        &__Link {
+            text-shadow: 1px 1px 2px black;
+        }
         &__School {
             display: flex;
         }
@@ -105,6 +115,7 @@
         position: absolute;
         top: 34px;
         left: 0;
+        border-top-width: 5px;
     }
     .HamburgerButton {
         display: inline-block;
@@ -117,6 +128,8 @@
     }
     /* ----------Section Splash / Course---------- */
     .Course {
+        padding-top: 108px;
+
         &__Icon {
             margin-bottom: 13px;
         }
@@ -205,9 +218,16 @@
         &__Text {
             margin-left: 15px;
         }
+        &__Carousel {
+            position: relative;
+        }
         &__Card {
             width: auto;
             height: 418px;
+
+            &:hover {
+                box-shadow: 0px 5px 10px #DCDFE4;
+            }
         }
         &__Photo {
             margin-bottom: 15px

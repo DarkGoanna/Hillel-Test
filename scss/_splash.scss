@@ -230,22 +230,28 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
-    border: 1px solid rgba(141, 148, 158, 0.2);
     box-shadow: 0px 10px 25px rgba(0, 24, 75, 0.15);
-    border-radius: 10px;
     position: absolute;
     left: 0;
-    top: 44px;
+    top: 100%;
     display: none;
+    box-sizing: content-box;
+    border-top: 15px solid transparent;
 
     &__Tab {
         border-bottom: 1px solid #EEEFF1;
         width: inherit;
+        background: #FFFFFF;
         
         &:hover, 
         &:focus-within {
             background: #F1FAFE;
+        }
+        &:first-of-type {
+            border-radius: 10px 10px 0 0;
+        }
+        &:last-of-type {
+            border-radius: 0 0 10px 10px;
         }
         &:last-child {
             border-bottom: none;

@@ -311,20 +311,25 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
-  border: 1px solid rgba(141, 148, 158, 0.2);
   -webkit-box-shadow: 0px 10px 25px rgba(0, 24, 75, 0.15);
           box-shadow: 0px 10px 25px rgba(0, 24, 75, 0.15);
-  border-radius: 10px;
   position: absolute;
   left: 0;
-  top: 44px;
-  display: none; }
+  top: 100%;
+  display: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-top: 15px solid transparent; }
   .SubMenu__Tab {
     border-bottom: 1px solid #EEEFF1;
-    width: inherit; }
+    width: inherit;
+    background: #FFFFFF; }
     .SubMenu__Tab:hover, .SubMenu__Tab:focus-within {
       background: #F1FAFE; }
+    .SubMenu__Tab:first-of-type {
+      border-radius: 10px 10px 0 0; }
+    .SubMenu__Tab:last-of-type {
+      border-radius: 0 0 10px 10px; }
     .SubMenu__Tab:last-child {
       border-bottom: none; }
   .SubMenu__Link {
@@ -808,7 +813,12 @@ a {
       padding: 0; }
 
   .Header {
-    margin-bottom: 33px; }
+    margin-bottom: 33px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; }
     .Header__TopBar {
       background: rgba(255, 255, 255, 0.85);
       -webkit-backdrop-filter: blur(20px);
@@ -860,7 +870,10 @@ a {
     top: 48px;
     left: 0;
     width: 100%;
-    padding: 5px 10px 0 10px; }
+    padding: 5px 10px 0 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#004182), to(transparent));
+    background-image: linear-gradient(to bottom, #004182, transparent);
+    height: 50px; }
     .NavBar__Nav.show {
       display: block; }
   .NavBar__Logo {
@@ -877,6 +890,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .Menu__Link {
+      text-shadow: 1px 1px 2px black; }
     .Menu__School {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -887,7 +902,8 @@ a {
   .SubMenu {
     position: absolute;
     top: 34px;
-    left: 0; }
+    left: 0;
+    border-top-width: 5px; }
 
   .HamburgerButton {
     display: inline-block;
@@ -899,14 +915,16 @@ a {
     cursor: pointer; }
 
   /* ----------Section Splash / Course---------- */
-  .Course__Icon {
-    margin-bottom: 13px; }
-  .Course__Title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 16px; }
-  .Course__Stats {
-    width: 100%; }
+  .Course {
+    padding-top: 108px; }
+    .Course__Icon {
+      margin-bottom: 13px; }
+    .Course__Title {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 16px; }
+    .Course__Stats {
+      width: 100%; }
 
   .Rating {
     margin-bottom: 28px; }
@@ -969,9 +987,14 @@ a {
       margin-left: 15px; }
     .Coaches__Text {
       margin-left: 15px; }
+    .Coaches__Carousel {
+      position: relative; }
     .Coaches__Card {
       width: auto;
       height: 418px; }
+      .Coaches__Card:hover {
+        -webkit-box-shadow: 0px 5px 10px #DCDFE4;
+                box-shadow: 0px 5px 10px #DCDFE4; }
     .Coaches__Photo {
       margin-bottom: 15px; }
     .Coaches__Link {
